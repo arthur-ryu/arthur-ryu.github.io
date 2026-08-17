@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <link href="css/main.css" rel="stylesheet">
+</head>
+<body style="background-color: #1a1a1a;">
+  
+  <select class="form-select form-select-lg mb-3" aria-label="Large select example">
+    <option selected value="5">Menu</option>
+    <option value="0">신화</option>
+    <option value="1">초월</option>
+    <option value="2">오메가</option>
+    <option value="3">상자</option>
+    <option value="4">all</option>
+  </select>
+
+  <p style="color: white; text-align: center; font-size: 100px;">BallTD</p>
+  
+  <div class="td-container">
+    <img src="www.valuevaultx.com_ball-tower-defense (1).png" class="td-img" >
+  </div>
+  <div class="td-container">
+    <img src="www.valuevaultx.com_ball-tower-defense (2).png" class="td-img">
+  </div>
+  <div class="td-container">
+    <img src="www.valuevaultx.com_ball-tower-defense (3).png" class="td-img">
+  </div>
+  <div class="td-container">
+    <img src="www.valuevaultx.com_ball-tower-defense.png" class="td-img">
+  </div>
+  
+
+  <script>
+
+    $('.form-select').on('change', function(){
+  $('.td-container').removeClass('td-show');
+  
+  if ($(this).val() == '0'){
+      $('.td-img').eq(0).parent().addClass('td-show');
+  } else if ($(this).val() == '1'){
+      $('.td-img').eq(1).parent().addClass('td-show');
+  } else if ($(this).val() == '2'){
+      $('.td-img').eq(2).parent().addClass('td-show');
+  } else if ($(this).val() == '3'){
+      $('.td-img').eq(3).parent().addClass('td-show');
+  } else if ($(this).val() == '4'){
+      $('.td-container').addClass('td-show');
+  } else if ($(this).val() == '5'){
+      $('.td-container').removeClass('.td-show')
+  }
+});
+
+
+
+
+
+  </script>
+
+</body>
+</html>

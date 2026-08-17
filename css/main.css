@@ -1,0 +1,76 @@
+.main-container {
+    width: 1000px;
+}
+
+td {
+    border: 1px solid black;
+    width: 100px;
+    height: 20px;
+    text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.pamus-container {
+    width: 1600px;
+    height: 90px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border: 10px;
+}
+
+.pamus-div-2 {
+    position: relative;
+    left: 80px;
+    top: 130px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-size: 30px;
+    height: 300px;  
+    width: 950px;
+}
+
+.pamus-div-3 {
+    position: relative;
+    bottom: 10px;
+    right: 300px;
+    background-color: white;
+    width: 1950px;
+    height: 245px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.show {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s;
+}
+
+.p-pointer:hover {
+    cursor: pointer;
+    color: red;
+}
+
+
+.click-btn {
+    padding: 25px;
+    width: 130px;
+    font-size: 30px;
+    border-radius: 10px;
+}
+.td-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+.td-container {
+    display: none;
+}
+.td-show {
+    display: block;
+}
